@@ -1,4 +1,7 @@
 #pragma once 
+#include <glm/glm.hpp>
+
+using namespace glm;
 
 float Lerp(float v1, float v2, float t) {
 	return (1 - t) * v1 + t * v2;

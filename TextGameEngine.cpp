@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+#include "glm\gtc\quaternion.hpp"
 #include "Graphics.h"
 #include "Input.h"
 
@@ -11,8 +12,9 @@
 #define CYAN    "\x1b[36m"
 #define RESET   "\x1b[0m"
 
-float before;
-float after;
+
+double before;
+double after;
 double delta;
 
 int main()
@@ -35,7 +37,10 @@ int main()
 	float t = 0;
 	float rotX = 0;
 	float rotY = 0;
+
+
 	while (true) {
+
 		before = GetTickCount();
 
 		out = clear; 
@@ -73,8 +78,8 @@ int main()
 		ShowCursor(false);
 		*/
 
-		rotX += 0.008f;
-		rotY += 0.004f;
+		rotX += 0.0008f * delta;
+		rotY += 0.0004f * delta;
 
 		quat rot = quat(vec3(rotY, rotX, 0));
 

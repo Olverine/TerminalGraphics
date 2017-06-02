@@ -17,12 +17,6 @@
     <ClCompile Include="TextGameEngine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Matrix.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Vector.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graphics.h">
@@ -34,9 +28,5 @@
     <ClInclude Include="Maths.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Matrix.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector.h" />
   </ItemGroup>
 </Project>

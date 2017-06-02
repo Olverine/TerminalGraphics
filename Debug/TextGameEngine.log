@@ -1,102 +1,15 @@
-﻿  Vector.cpp
-  TextGameEngine.cpp
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(8): error C2653: 'glm': is not a class or namespace name
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(9): error C2653: 'glm': is not a class or namespace name
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(13): error C2653: 'glm': is not a class or namespace name
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(13): error C2146: syntax error: missing ';' before identifier 'LerpVector'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(13): error C2143: syntax error: missing ';' before '{'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(13): error C2447: '{': missing function header (old-style formal list?)
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(20): error C2653: 'glm': is not a class or namespace name
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(20): error C2065: 'vec2': undeclared identifier
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(20): error C2146: syntax error: missing ')' before identifier 'p1'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(20): error C2143: syntax error: missing ';' before '{'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(20): error C2447: '{': missing function header (old-style formal list?)
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(24): error C2653: 'glm': is not a class or namespace name
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(24): error C2146: syntax error: missing ';' before identifier 'arrayToMatrix'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(24): error C2143: syntax error: missing ';' before '{'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(24): error C2447: '{': missing function header (old-style formal list?)
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(30): error C2653: 'glm': is not a class or namespace name
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(30): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(30): error C2086: 'int mat4': redefinition
-  c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(24): note: see declaration of 'mat4'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(30): error C2146: syntax error: missing ';' before identifier 'getTranslation'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(30): error C2143: syntax error: missing ';' before '{'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(30): error C2447: '{': missing function header (old-style formal list?)
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(40): error C2653: 'glm': is not a class or namespace name
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(40): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(40): error C2086: 'int mat4': redefinition
-  c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(24): note: see declaration of 'mat4'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(40): error C2146: syntax error: missing ';' before identifier 'getPerspective'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(40): error C2143: syntax error: missing ';' before '{'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(40): error C2447: '{': missing function header (old-style formal list?)
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(50): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(50): error C2086: 'int mat4': redefinition
-  c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(24): note: see declaration of 'mat4'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(50): error C2146: syntax error: missing ';' before identifier 'getView'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(51): error C2143: syntax error: missing ';' before '{'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\maths.h(51): error C2447: '{': missing function header (old-style formal list?)
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(12): error C2146: syntax error: missing ')' before identifier 'point'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(12): error C2143: syntax error: missing ';' before '{'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(12): error C2447: '{': missing function header (old-style formal list?)
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(36): error C2065: 'vec2': undeclared identifier
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(36): error C2146: syntax error: missing ')' before identifier 'point'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(36): error C2143: syntax error: missing ';' before '{'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(36): error C2447: '{': missing function header (old-style formal list?)
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(40): error C2065: 'vec4': undeclared identifier
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(40): error C2146: syntax error: missing ')' before identifier 'point'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(40): error C2143: syntax error: missing ';' before '{'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(40): error C2447: '{': missing function header (old-style formal list?)
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(45): error C2064: term does not evaluate to a function taking 3 arguments
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(45): error C2660: 'DrawPoint': function does not take 2 arguments
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(49): error C2064: term does not evaluate to a function taking 3 arguments
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(49): error C2661: 'DrawPoint': no overloaded function takes 2 arguments
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(52): error C2146: syntax error: missing ')' before identifier 'p1'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(52): error C2143: syntax error: missing ';' before '{'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(52): error C2447: '{': missing function header (old-style formal list?)
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(165): error C2065: 'vec4': undeclared identifier
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(165): error C2146: syntax error: missing ')' before identifier 'p1'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(165): error C2143: syntax error: missing ';' before '{'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(165): error C2447: '{': missing function header (old-style formal list?)
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(170): error C2064: term does not evaluate to a function taking 3 arguments
+﻿  TextGameEngine.cpp
+c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(16): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(22): warning C4309: 'static_cast': truncation of constant value
+c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(24): warning C4309: 'static_cast': truncation of constant value
+c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(55): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(56): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(57): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(166): warning C4309: 'static_cast': truncation of constant value
 c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(170): warning C4309: 'static_cast': truncation of constant value
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(170): error C2660: 'DrawLine': function does not take 2 arguments
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(173): error C2146: syntax error: missing ')' before identifier 'position'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(173): error C2143: syntax error: missing ';' before '{'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\graphics.h(173): error C2447: '{': missing function header (old-style formal list?)
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(28): error C2146: syntax error: missing ';' before identifier 'model'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(28): error C2065: 'model': undeclared identifier
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(28): error C2064: term does not evaluate to a function taking 1 arguments
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(29): error C2146: syntax error: missing ';' before identifier 'view'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(29): error C2065: 'view': undeclared identifier
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(29): error C2064: term does not evaluate to a function taking 3 arguments
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(29): error C3861: 'getView': identifier not found
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(30): error C2146: syntax error: missing ';' before identifier 'projection'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(30): error C2065: 'projection': undeclared identifier
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(30): error C3861: 'radians': identifier not found
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(30): error C3861: 'getPerspective': identifier not found
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(39): warning C4244: '=': conversion from 'DWORD' to 'float', possible loss of data
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(79): error C2065: 'quat': undeclared identifier
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(79): error C2146: syntax error: missing ';' before identifier 'rot'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(79): error C2065: 'rot': undeclared identifier
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(79): error C2064: term does not evaluate to a function taking 3 arguments
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(79): error C3861: 'quat': identifier not found
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(81): error C2065: 'model': undeclared identifier
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(81): error C2065: 'rot': undeclared identifier
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(81): error C3861: 'mat4_cast': identifier not found
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(83): error C2146: syntax error: missing ';' before identifier 'mp'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(83): error C2065: 'mp': undeclared identifier
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(83): error C2065: 'model': undeclared identifier
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(83): error C2065: 'view': undeclared identifier
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(83): error C2065: 'projection': undeclared identifier
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(85): error C2064: term does not evaluate to a function taking 1 arguments
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(85): error C2065: 'mp': undeclared identifier
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(85): error C3861: 'Draw3dBox': identifier not found
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(88): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(91): warning C4244: '=': conversion from 'DWORD' to 'float', possible loss of data
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(93): warning C4244: '=': conversion from 'DWORD' to 'float', possible loss of data
-  Matrix.cpp
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\matrix.cpp(16): error C2082: redefinition of formal parameter 'mat'
-c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\matrix.cpp(19): error C2059: syntax error: ']'
-  Generating Code...
+c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(32): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(81): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(82): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\noolt4\documents\visual studio 2015\projects\textgameengine\textgameengine\textgameengine.cpp(93): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  TextGameEngine.vcxproj -> C:\Users\noolt4\documents\visual studio 2015\Projects\TextGameEngine\Debug\TextGameEngine.exe
+  TextGameEngine.vcxproj -> C:\Users\noolt4\documents\visual studio 2015\Projects\TextGameEngine\Debug\TextGameEngine.pdb (Full PDB)
