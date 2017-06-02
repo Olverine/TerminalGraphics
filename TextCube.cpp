@@ -2,7 +2,7 @@
 #include <iostream>
 #include "glm\gtc\quaternion.hpp"
 #include "Graphics.h"
-#include "Input.h"
+#include "Input.h" 
 
 #define RED     "\x1b[31m"
 #define GREEN   "\x1b[32m"

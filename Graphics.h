@@ -162,7 +162,7 @@ void DrawLine(vec3 p1, vec3 p2, char character) {
 	DrawPoint(p2.x, p2.y, Lerp(p1.z, p2.z, Distance(p1, p2) / distance), character);
 }*/
 
-void DrawLine(vec4 p1, vec4 p2) {
+void DrawLine(vec4 p1, vec4 p2) { 
 	DrawLine(vec3(p1.x, p1.y, p1.z), vec3(p2.x, p2.y, p2.z), static_cast<char>(176));
 }
 
