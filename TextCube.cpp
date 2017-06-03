@@ -47,7 +47,7 @@ int main()
 
 		for (int i = 0; i < 2211; i++)
 		{
-			zBuffer[i] = -2000000000;
+			zBuffer[i] = -5000;
 		}
 		
 /*		if (GetKey(VK_RIGHT)) {
@@ -69,7 +69,7 @@ int main()
 			rotY = 0;
 		}
 */
-		/* UNCOMMENT FOR MOUSE CONTROLS!
+		/* UNCOMMENT FOR MOUSE CONTROLS! (WINDOWS ONLY!)
 		POINT p;
 		GetCursorPos(&p);
 		rotX = (float)p.x / 1366 - 0.5f;
@@ -78,8 +78,8 @@ int main()
 		ShowCursor(false);
 		*/
 
-		rotX += 0.00000002f;
-		rotY += 0.00000001f;
+		rotX = 0.0001f;
+		rotY = 0.0001f;
 
 		quat rot = quat(vec3(rotY, rotX, 0));
 
@@ -91,7 +91,7 @@ int main()
 
 		//DrawLine(0, 0, cos(radians(t)) * 17, sin(radians(t)) * 17);
 
-		printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n%s",out.c_str());
+		cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\" << out.c_str();
 
 //		after = GetTickCount();
 //		delta = after - before;

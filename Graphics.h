@@ -18,18 +18,11 @@ void DrawPoint(vec3 point, char character) {
 	if (point.z < zBuffer[index])
 		return;
 
-	if (178 + (int)(point.z / 5) < 177)
-		character = static_cast<char>(176);
-	else if (178 + (int)(point.z / 5) > 178)
-		character = static_cast<char>(219);
-	else
-		character = static_cast<char>(178 + (int)(point.z / 5));
-
-	out[index] = character;
+	out[index] = 'X';
 	zBuffer[index] = point.z;
 	if (point.z < zBuffer[index + 1])
 		return;
-	out[index + 1] = character;
+	out[index + 1] = 'X';
 	zBuffer[index + 1] = point.z;
 }
 
