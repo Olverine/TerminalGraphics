@@ -79,7 +79,7 @@ int main()
 		*/
 
 		rotX = 0.0001f;
-		rotY = 0.0001f;
+		rotY = 0.00005f;
 
 		quat rot = quat(vec3(rotY, rotX, 0));
 
