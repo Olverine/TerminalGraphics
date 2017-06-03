@@ -1,8 +1,8 @@
 #include <string>
 #include <iostream>
-#include "glm\gtc\quaternion.hpp"
+#include <stdio.h>
 #include "Graphics.h"
-#include "Input.h" 
+#include "quaternion.hpp" 
 
 #define RED     "\x1b[31m"
 #define GREEN   "\x1b[32m"
@@ -32,25 +32,25 @@ int main()
 	mat4 projection = getPerspective(radians(90.0f), 0.1, 500);
 
 	//system("pause");
-	SetCursorPos(1366 / 2, 768 / 2);
-	printf(RESET);
-	float t = 0;
+//	SetCursorPos(1366 / 2, 768 / 2);
+//	printf(RESET);
+
 	float rotX = 0;
 	float rotY = 0;
 
 
 	while (true) {
 
-		before = GetTickCount();
+//		before = GetTickCount();
 
 		out = clear; 
 
 		for (int i = 0; i < 2211; i++)
 		{
-			zBuffer[i] = numeric_limits<float>::lowest();
+			zBuffer[i] = -2000000000;
 		}
 		
-		if (GetKey(VK_RIGHT)) {
+/*		if (GetKey(VK_RIGHT)) {
 			rotX = 0.002f;
 		}
 		else if (GetKey(VK_LEFT)) {
@@ -68,7 +68,7 @@ int main()
 		else {
 			rotY = 0;
 		}
-
+*/
 		/* UNCOMMENT FOR MOUSE CONTROLS!
 		POINT p;
 		GetCursorPos(&p);
@@ -78,8 +78,8 @@ int main()
 		ShowCursor(false);
 		*/
 
-		rotX += 0.0008f * delta;
-		rotY += 0.0004f * delta;
+		rotX += 0.00000002f;
+		rotY += 0.00000001f;
 
 		quat rot = quat(vec3(rotY, rotX, 0));
 
@@ -90,16 +90,16 @@ int main()
 		Draw3dBox(vec3(0), vec3(18), mp);
 
 		//DrawLine(0, 0, cos(radians(t)) * 17, sin(radians(t)) * 17);
-		t += delta / 5;
+
 		printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n%s",out.c_str());
 
-		after = GetTickCount();
-		delta = after - before;
-		before = GetTickCount();
+//		after = GetTickCount();
+//		delta = after - before;
+//		before = GetTickCount();
 		//printf("%d fps", (1.0 / delta * 1000.0));
 	}
 
-	system("pause");
+//	system("pause");
 
     return 0;
 }
