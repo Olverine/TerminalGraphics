@@ -38,6 +38,7 @@ int main()
 	float rotX = 0;
 	float rotY = 0;
 
+	system("clear");
 
 	while (true) {
 
@@ -91,7 +92,7 @@ int main()
 
 		//DrawLine(0, 0, cos(radians(t)) * 17, sin(radians(t)) * 17);
 
-		cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\" << out.c_str();
+		cout << "\033[1;1H" << out.c_str();
 
 //		after = GetTickCount();
 //		delta = after - before;
