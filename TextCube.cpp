@@ -92,7 +92,7 @@ int main()
 
 		//DrawLine(0, 0, cos(radians(t)) * 17, sin(radians(t)) * 17);
 
-		cout << "\033[1;1H" << out.c_str();
+		cout << out.c_str() << "\033[1;1H";
 
 //		after = GetTickCount();
 //		delta = after - before;

@@ -9,6 +9,8 @@ string out = "";
 float zBuffer[2211];
 float zClear = FLT_MIN;
 
+char greyscale[9] = {'.',':','-','=','+','*','%','#','@'};
+
 void DrawPoint(vec3 point, char character) {
 	if (point.x > 16 || point.x < -16 || point.y > 16 || point.y < -16)
 		return;
@@ -18,11 +20,11 @@ void DrawPoint(vec3 point, char character) {
 	if (point.z < zBuffer[index])
 		return;
 
-	out[index] = 'X';
+	out[index] = greyscale[int(floor(point.z / 4)) + 4];
 	zBuffer[index] = point.z;
 	if (point.z < zBuffer[index + 1])
 		return;
-	out[index + 1] = 'X';
+        out[index + 1] = greyscale[int(floor(point.z / 4)) + 4];
 	zBuffer[index + 1] = point.z;
 }
 
