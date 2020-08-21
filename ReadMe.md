@@ -6,4 +6,5 @@ Run the program with the shape file to load as the first argument. For example:
 `./tg cube`
 
 <h3>screenshots</h3>
-![Hello Wolrd](https://i.imgur.com/rogVL7e.gif)
+![Hello Wolrd]
+(https://i.imgur.com/rogVL7e.gif)
