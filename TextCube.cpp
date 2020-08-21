@@ -1,39 +1,17 @@
 #include <string>
 #include <iostream>
 #include <stdio.h>
+#include "glm/gtx/euler_angles.hpp"
 #include "Graphics.h"
-#include "quaternion.hpp" 
 
-#define RED     "\x1b[31m"
-#define GREEN   "\x1b[32m"
-#define YELLOW  "\x1b[33m"
-#define BLUE    "\x1b[34m"
-#define MAGENTA "\x1b[35m"
-#define CYAN    "\x1b[36m"
-#define RESET   "\x1b[0m"
-
-
-double before;
-double after;
-double delta;
-
-int main()
+int main(int argc, char* argv[])
 {
-
-	for (int y = 0; y < 33; y++) {
-		for (int x = 0; x < 33; x++) {
-			clear += "  ";
-		}
-		clear += "\n";
-	}
+	vec4* shape = loadShape(argv[1]);
+	initViewPort();
 
 	mat4 model = mat4(1.0);
 	mat4 view = getView(vec3(0, 0, 1), vec3(0, 0, 0), vec3(0, 1, 0)); 
 	mat4 projection = getPerspective(radians(90.0f), 0.1, 500);
-
-	//system("pause");
-//	SetCursorPos(1366 / 2, 768 / 2);
-//	printf(RESET);
 
 	float rotX = 0;
 	float rotY = 0;
@@ -41,66 +19,18 @@ int main()
 	system("clear");
 
 	while (true) {
+		clearViewPort();		
 
-//		before = GetTickCount();
+		rotX += 0.0002f;
+		rotY += 0.0005f;
 
-		out = clear; 
+		model = eulerAngleYXZ(rotY, rotX, 0.0f);
 
-		for (int i = 0; i < 2211; i++)
-		{
-			zBuffer[i] = -5000;
-		}
-		
-/*		if (GetKey(VK_RIGHT)) {
-			rotX = 0.002f;
-		}
-		else if (GetKey(VK_LEFT)) {
-			rotX = -0.002f;
-		}
-		else {
-			rotX = 0;
-		}
-		if (GetKey(VK_UP)) {
-			rotY = 0.002f;
-		}
-		else if (GetKey(VK_DOWN)) {
-			rotY = -0.002f;
-		}
-		else {
-			rotY = 0;
-		}
-*/
-		/* UNCOMMENT FOR MOUSE CONTROLS! (WINDOWS ONLY!)
-		POINT p;
-		GetCursorPos(&p);
-		rotX = (float)p.x / 1366 - 0.5f;
-		rotY = (float)p.y / 768 - 0.5f;
-		SetCursorPos(1366 / 2, 768 / 2);
-		ShowCursor(false);
-		*/
-
-		rotX = 0.0001f;
-		rotY = 0.00005f;
-
-		quat rot = quat(vec3(rotY, rotX, 0));
-
-		model *= mat4_cast(rot);
-
-		mat4 mp = model * view * projection ;
-
-		Draw3dBox(vec3(0), vec3(18), mp);
-
-		//DrawLine(0, 0, cos(radians(t)) * 17, sin(radians(t)) * 17);
+		mat4 mp =  projection * view * model;
+		DrawShape(shape, mp);
 
 		cout << out.c_str() << "\033[1;1H";
-
-//		after = GetTickCount();
-//		delta = after - before;
-//		before = GetTickCount();
-		//printf("%d fps", (1.0 / delta * 1000.0));
 	}
-
-//	system("pause");
 
     return 0;
 }

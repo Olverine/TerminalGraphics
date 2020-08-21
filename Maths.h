@@ -1,6 +1,6 @@
 #pragma once
 #include <string.h> 
-#include <glm.hpp> 
+#include "glm/glm.hpp"
 
 using namespace glm;
 using namespace std;
@@ -58,11 +58,11 @@ mat4 getView(vec3 eye, vec3 target, vec3 up)
 	vec3 xaxis = normalize(cross(up, zaxis));// The "right" vector.
 	vec3 yaxis = cross(zaxis, xaxis);     // The "up" vector.
 
-										  // Create a 4x4 view matrix from the right, up, forward and eye position vectors
+	// Create a 4x4 view matrix from the right, up, forward and eye position vectors
 	float viewMatrix[16] = {
-		xaxis.x,            yaxis.x,            zaxis.x,       0,
-		xaxis.y,            yaxis.y,            zaxis.y,       0,
-		xaxis.z,            yaxis.z,            zaxis.z,       0,
+		xaxis.x, yaxis.x, zaxis.x, 0,
+		xaxis.y, yaxis.y, zaxis.y, 0,
+		xaxis.z, yaxis.z, zaxis.z, 0,
 		-dot(xaxis, eye), -dot(yaxis, eye), -dot(zaxis, eye),  1
 	};
 
