@@ -1,5 +1,5 @@
 CC = g++
-COMP = TextCube.cpp
+COMP = Main.cpp
 OUT = tg
 
 build:

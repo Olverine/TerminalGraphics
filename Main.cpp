@@ -21,8 +21,8 @@ int main(int argc, char* argv[])
 	while (true) {
 		clearViewPort();		
 
-		rotX += 0.0002f;
-		rotY += 0.0005f;
+		rotX += 0.0001f;
+		rotY += 0.0002f;
 
 		model = eulerAngleYXZ(rotY, rotX, 0.0f);
 

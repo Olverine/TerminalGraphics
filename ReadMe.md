@@ -7,4 +7,6 @@ Run the program with the shape file to load as the first argument. For example:
 
 <h3>screenshots</h3>
 
+![Cube](https://i.imgur.com/CZL83lM.gif)
+
 ![Hello World](https://i.imgur.com/rogVL7e.gif)
