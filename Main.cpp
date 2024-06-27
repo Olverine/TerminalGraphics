@@ -21,6 +21,7 @@ int main(int argc, char* argv[])
 	while (true) {
 		clearViewPort();		
 
+		// Rotate the object
 		rotX += 0.0001f;
 		rotY += 0.0002f;
 
